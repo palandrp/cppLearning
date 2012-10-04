@@ -222,7 +222,7 @@ int main(void)
          << str_len(lesson) << endl;
 
     cout << "Number of letters in first string is "  
-         << num_let(title)     << endl;
+         << num_let(title)  << endl;
     cout << "Number of letters in second string is " 
          << num_let(lesson) << endl;
 
