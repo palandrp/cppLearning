@@ -21,7 +21,7 @@ int main(void)
     worker.salary        = 25000.00;
     worker.office_number = 102;
 
-    //Копировать номер тулуфона в строку
+    //Копировать номер телефона в строку
     strcpy(worker.phone,"555-1212");
 
     cout << "Служащий:"         << worker.name          << endl;
