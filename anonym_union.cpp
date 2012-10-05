@@ -6,7 +6,7 @@ int main(void)
 {
     union
     {
-        int miles;
+        int  miles;
         long meters;
     };
 
