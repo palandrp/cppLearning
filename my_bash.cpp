@@ -27,32 +27,33 @@ void param_analysis(char *string,
                     int  *param_2, 
                     int  *param_3)
 {
-    for(int i = 0; *string != '\0'; string++, i++)
+    while(*string)
     {
-        if(string[i] == '-')
+        if(*string == '-')
         {
-            switch(string[++i])
+            string++;
+            switch(*string)
             {
                 case 'A'    : 
                 {
-                    while(string[i] != '\0')
+                    while(*string)
                     {
-                        i++;
-                        if(string[i] != ' ')
+                        string++;
+                        if(*string != ' ')
                         {
-                            *param_1 = (int)*string;
+                            *param_1 = *string;
                             break;
                         }
                     } break;
                 }
                 case 'B'    :
                 {
-                    while(string[i] != '\0')
+                    while(*string)
                     {
-                        i++;
-                        if(string[i] != ' ')
+                        string++;
+                        if(*string != ' ')
                         {
-                            *param_2 = (int)*string;
+                            *param_2 = *string;
                             break;
                         }
                     } break;
@@ -60,11 +61,12 @@ void param_analysis(char *string,
                 }
                 case 'C'    :
                 {
-                    while(string[i] != '\0')
+                    while(*string)
                     {
-                        if(string[i] != ' ')
+                        string++;
+                        if(*string != ' ')
                         {
-                            *param_3 = (int)*string;
+                            *param_3 = *string;
                             break;
                         }
                     } break;
@@ -78,6 +80,7 @@ void param_analysis(char *string,
                     cout << endl;
             }
         }
+        else string++;
     }
 }
 
