@@ -2,18 +2,19 @@
 
 using namespace std;
 
-void show_string(char *string) 
+void show_string(char *string)
 
-{ 
+{
    while (*string != '\0')
    { 
-      cout << *string; 
-      string++; 
-    } 
-} 
+      cout << *string;
+      string++;
+    }
+}
 
 int main(void) 
 
-{ 
-   show_string("Учимся программировать на языке C++!"); 
+{
+//warning: deprecated conversion from string constant to 'char*'
+   show_string("Учимся программировать на языке C++!");
 }
