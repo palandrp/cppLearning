@@ -4,12 +4,12 @@
 class string
 {
 public:
-           string(char *);
+          string(char *);
     char* operator +(char *);
     char* operator -(char);
     int   operator ==(string);
-    void   show_string(void);
-           ~string(void);
+    void  show_string(void);
+          ~string(void);
 private:
     char data[256];
 };
